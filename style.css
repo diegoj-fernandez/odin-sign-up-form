@@ -1,0 +1,157 @@
+* {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    --basic-bg: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #596D48;
+}
+
+main {
+    height: 100%;
+    width: 900px;
+    display: flex;
+    align-items: center;
+}
+
+.image-area {
+    height: 100%;
+    width: 40%;
+    background: url(./img/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+.logo-bg {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top: 150px;
+    background: rgba(0,0,0,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+img {
+    height: 85px;
+    width: auto;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-credit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    position: absolute;
+    bottom: 2px;
+    color: white;
+    width: 100%;
+    height: auto;
+
+}
+
+.form-area {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background: rgb(248,248,248);
+}
+
+.header-text {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-div {
+    padding: 20px;
+    box-shadow: 0px 2px 5px grey;
+    background: var(--basic-bg);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+form>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-div {
+    display: flex;
+    gap: 20px;
+}
+
+.input-div>div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+input {
+    float: left;
+}
+
+.button-div {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button {
+    height: 40px;
+    width: 200px;
+    background: #596D48;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    box-shadow: 1px 3px 5px grey;
+}
+
+footer {
+    height: auto;
+    width: 900px;
+    color: rgba(0,0,0,.7);
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background: var(--basic-bg);
+}
