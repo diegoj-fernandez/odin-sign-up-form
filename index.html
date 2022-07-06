@@ -10,69 +10,72 @@
 <body>
     <main>
         <div class="image-area">
-            <div class="logo-bg">
+            <div class="logo-container">
                 <img src="./img/odin-lined.png" alt="">
                 <h1>ODIN</h1>
+                <!-- <h1>ODIN</h1> -->
             </div>
-            <div class="image-credit">
+            <div class="credit-container">
                 <p>Photo by <a href="">Halie West</a> on <a href="">Unsplash</a></p>
             </div>
         </div>
         <div class="form-area">
-            <div class="header-text">
-                <p>This is not a real online service! You know you need 
+            <div class="form-header">
+                <p class="large">This is not a real online service! You know you need 
                     something like this in your life to help you realize 
                     your deepest dreams. Sign up to get started.
                 </p>
-                <p>You know you want to.</p>
+                <p class="large">You know you want to.</p>
             </div>
-            <div class="form-div">
+            <div class="form-body">
                 <form action="">
-                    <div>
-                        <p>Let's do this!</p>
+                    <div class="input-div">
+                        <div class="form-title">
+                            <p class="large">Let's do this!</p>
+                            <p class="small">(Fields with * are required)</p>
+                        </div>
+                        <div class="form-input">
+                            <div class="form-row">
+                                <div>
+                                    <label for="first-name">First Name *</label>
+                                    <input type="text" id="first-name" name="userFirstName" placeholder="John" required>
+                                </div>
+                                <div>
+                                    <label for="last-name">Last Name *</label>
+                                    <input type="text" id="last-name" name="userLastName" placeholder="Doe"  required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div>
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="userEmail" placeholder="john.doe@email.com" required>
+                                </div>
+                                <div>
+                                    <label for="phone">Phone Number</label>
+                                    <input type="number" id="phone" name="userPhoneNumber" pattern="^[0-9]{10}$">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div>
+                                    <label for="password">Password *</label>
+                                    <input class="error" type="password" id="password" name="userPassword" required>
+                                </div>
+                                <div>
+                                    <label for="confirmPass">Confirm Password *</label>
+                                    <input  class="error" type="password" id="confirmPass" name="userConfirmPass" required>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <div class="input-div">
-                            <div>
-                                <label for="firstName">First Name</label>
-                                <input type="text" id="firstName">
-                            </div>
-                            <div>
-                                <label for="lastName">Last Name</label>
-                                <input type="text" id="lastName">
-                            </div>
+                    <div class="btn-div">
+                        <div class="btn-container">
+                            <button>Create Account</button>
                         </div>
-                        <div class="input-div">
-                            <div>
-                                <label for="email">Email</label>
-                                <input type="email" id="email">
-                            </div>
-                            <div>
-                                <label for="phoneNumber">Phone Number</label>
-                                <input type="tel" id="phoneNumber">
-                            </div>
-                        </div>
-                        <div class="input-div">
-                            <div>
-                                <label for="password">Password</label>
-                                <input type="password" id="password">
-                            </div>
-                            <div>
-                                <label for="confirmPass">Confirm Password</label>
-                                <input type="password" id="confirmPass">
-                            </div>
+                        <div class="login-container">
+                            <p class="small">Already have an account? <a href="">Log in</a></p>
                         </div>
                     </div>
                 </form>
-            </div>
-            <div class="button-div">
-                <div>
-                    <button type="button">Create Account</button>
-                </div>
-                <div>
-                    <p>Already have an account? <a href="">Log in</a></p>
-                </div>
-            </div>
         </div>
     </main>
     <!-- <footer>diegoj-fernandez</footer> -->
